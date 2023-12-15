@@ -1,0 +1,9 @@
+2023-12-15T10:05:29.011Z error: Cannot find module './dialects/postgres'
+Require stack:
+- /Users/poojapatel/Documents/Projects/NPPA/strapi-v3-mongo-v3-sql-migration/src/index.js
+2023-12-15T10:07:07.425Z error: Cannot find module './dialects/postgres'
+Require stack:
+- /Users/poojapatel/Documents/Projects/NPPA/strapi-v3-mongo-v3-sql-migration/src/index.js
+2023-12-15T10:08:24.772Z error: insert into "users-permissions_user" ("allowLegalDefenseFund", "authorizeNetCustomerProfileId", "autoRenewMembership", "blocked", "civi_reference_id", "confirmed", "created_at", "email", "eventUpdates", "firstName", "id", "importantAccountNotifications", "isDeleted", "lastName", "memberID", "membershipReminders", "mongoid", "newsUpdates", "newsletter", "password", "phoneNumber", "provider", "shareMyInformation", "showPublicProfile", "updated_at", "username", "website") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27) - null value in column "firstName" of relation "users-permissions_user" violates not-null constraint
+2023-12-15T10:13:40.927Z error: insert into "gifted_memberships" ("accepted", "accepted_date", "created_at", "gifteeEmail", "gifteeFirstName", "gifteeLastName", "id", "keepAnonymous", "membership_plan", "membership_plan_details", "mongoid", "published_at", "updated_at") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) - invalid input syntax for type integer: "6203eddc34add82b1e4071f2"
+2023-12-15T10:30:42.589Z error: ALTER TABLE memberships ALTER COLUMN membership_plan TYPE integer USING membership_plan::integer - invalid input syntax for type integer: "6203eddc34add82b1e4071f2"
